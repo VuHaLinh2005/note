@@ -1,0 +1,1 @@
+**tĩnh** và người dùng có thể **truy cập** được , giống **public**.

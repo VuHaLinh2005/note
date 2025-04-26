@@ -1,0 +1,16 @@
+{
+  "serverUrl": "https://share.alter.run",
+  "username": "",
+  "password": "",
+  "token": "",
+  "vaultId": 1742854830462,
+  "autoRunInterval": -1,
+  "parallelism": 10,
+  "showNotifications": true,
+  "syncConfigDir": false,
+  "syncToLocalGit": false,
+  "maximumCommitFileSize": 1,
+  "remoteGitAddress": "",
+  "remoteGitUsername": "",
+  "remoteGitAccessToken": ""
+}

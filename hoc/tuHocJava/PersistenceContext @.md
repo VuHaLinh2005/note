@@ -1,0 +1,1 @@
+- **@PersistenceContext**: Dùng để inject một EntityManager được quản lý bởi **JPA**, dùng để thao tác với **cơ sở dữ liệu**. Nó đặc thù cho JPA.

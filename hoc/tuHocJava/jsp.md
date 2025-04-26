@@ -1,0 +1,1 @@
+ JSP giống như một khuôn mẫu HTML, nhưng thông minh hơn. Máy chủ web sẽ **đổ** **dữ liệu** và thực thi mã **Java** bên trong **JSP**, rồi biến nó thành **HTML** **thuần** gửi cho trình duyệt. Vì xử lý trên **server** nên nó động, không như HTML tĩnh phải sửa trực tiếp. Kết hợp với **Spring**, JSP càng mạnh mẽ hơn trong việc tạo web động.

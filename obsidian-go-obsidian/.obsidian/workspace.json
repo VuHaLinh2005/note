@@ -1,0 +1,230 @@
+{
+  "main": {
+    "id": "d197c058fcd1c3d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "7188ca86d4bf11a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4a6448727a07edf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "advanced/embedded attachment.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "embedded attachment"
+            }
+          },
+          {
+            "id": "1b2d79ef203022d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "untimate/note/basic.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "basic"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "68a9393b5f5ea02e",
+    "type": "split",
+    "children": [
+      {
+        "id": "26b6b5c6446bc211",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a29c615d2810a920",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Trình duyệt tệp"
+            }
+          },
+          {
+            "id": "c0534d3cfedd5023",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "#tag #howToUseTag",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Tìm kiếm"
+            }
+          },
+          {
+            "id": "c3db44d3a2a77221",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Đánh dấu"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 218.5
+  },
+  "right": {
+    "id": "8a058ac3c68d2332",
+    "type": "split",
+    "children": [
+      {
+        "id": "6de465c13edc1038",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "41e08d61606737ed",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "advanced/link.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Liên kết đến của link"
+            }
+          },
+          {
+            "id": "fbd0488fd534a94c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "untimate/note/basic.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Liên kết đi ra từ basic"
+            }
+          },
+          {
+            "id": "6441af81b14b5fa8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a26dcc0c1210ec79",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "advanced/link.md"
+              },
+              "icon": "lucide-list",
+              "title": "Đề cương của link"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Mở bộ chuyển đổi nhanh": false,
+      "graph:Mở xem biểu đồ": false,
+      "canvas:Tạo bảng mới": false,
+      "templates:Chèn mẫu": false,
+      "command-palette:Mở khay lệnh": false,
+      "workspaces:Quản lý cấu trúc khung làm việc": false
+    }
+  },
+  "active": "1b2d79ef203022d4",
+  "lastOpenFiles": [
+    "testMakdow/testMacdown.md",
+    "testMakdow/content_tim-hieu-mo-hinh-5-buoc-de-ap-dung-tu-duy-nguoc-hieu-qua.jpg",
+    "testMakdow/content_mot-so-cach-de-ren-luyen_-mo-rong-tu-duy-nguoc.jpg",
+    "testMakdow/content_giai-nghia-tu-duy-nguoc-la-gi.jpg",
+    "untimate/note/basic.md",
+    "advanced/tag.md",
+    "advanced/embedded attachment.md",
+    "advanced/link.md",
+    "laptrinhMang/giaothucAndApi.md",
+    "untimate/img/cat.jpg",
+    "testMakdow/content_tim-hieu-cac-uu-va-nhuoc-diem-cua-tu-duy-nguoc.jpg",
+    "README.md",
+    "laptrinhMang/giaoThucAndApi.md",
+    "advanced/giaothucAndApi.md",
+    "alias.md",
+    "info.png",
+    "clean.png",
+    "clean 1.png",
+    "testMakdow",
+    "laptrinhMang",
+    "untimate/img",
+    "helo.canvas",
+    "img.md",
+    "ds.md",
+    "Chưa đặt tên 1.md",
+    "tag3.md",
+    "tag2.md",
+    "2024-08-20.md",
+    "advanced/Chưa đặt tên.md",
+    "note2/helo.md",
+    "advanced",
+    "2024-06-14.md",
+    "link.md",
+    "note2/note_new.md",
+    "note2",
+    "Demo Vault/Daily Notes/2023-03-20.md",
+    "2024-05-03.md",
+    "2024-05-02.md",
+    "Chưa đặt tên 3.canvas",
+    "Chưa đặt tên 2.canvas",
+    "Chưa đặt tên 1.canvas",
+    "Demo Vault/src/Template/Monthly Journal.md",
+    "Chưa đặt tên/Chưa đặt tên.canvas",
+    "untimate/note",
+    "untimate",
+    "ê.canvas"
+  ]
+}

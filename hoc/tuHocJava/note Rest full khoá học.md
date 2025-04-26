@@ -1,0 +1,6 @@
+- vd 25
+	- use post man post : raw + json
+	- magic đứng sau chuyển đổi json - > object, và ngc lại : là JackSon
+-  stop resonentity # 35
+- buider pattent with respon entity --> dễ đọc , hiểu
+	- check and uncheck exeption(exeption la co bug va can su ly)

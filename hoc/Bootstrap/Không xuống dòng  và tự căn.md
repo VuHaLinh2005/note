@@ -1,0 +1,1 @@
+d-flex flex-nowrap overflow-auto

@@ -1,0 +1,1 @@
+là dạng mã nhưng thấp hơn mã nguồn ( vẫn là chữ), nhưgn k phải 0 1 , tức cao hơn mã máy

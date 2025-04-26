@@ -1,0 +1,1 @@
+Chính xác! @Valid đơn giản là nói với Spring: "Hãy kiểm tra xem dữ liệu này có hợp lệ không, dựa trên các quy tắc validation tôi đã định nghĩa." Nó như một công tắc **bật** validation lên.
