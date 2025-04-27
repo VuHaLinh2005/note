@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tuHocJava/Lỗi khi serialize + Lazy.md",
+                "file": "config note/config note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lỗi khi serialize + Lazy"
+              "title": "config note"
             }
           },
           {
@@ -256,10 +256,12 @@
   },
   "active": "ef9b124b945422f3",
   "lastOpenFiles": [
+    "tuHocJava/Lỗi khi serialize + Lazy.md",
+    "config note/config note.md",
+    "config note",
     "work/Note pdp.md",
     "SQL/Booksattion.md",
     "tuHocJava/Serialization.md",
-    "tuHocJava/Lỗi khi serialize + Lazy.md",
     "tuHocJava/polymorphism.md",
     "tuHocJava/OOP.md",
     "work/tt nhóm and cá nhân.md",
@@ -283,7 +285,6 @@
     "work/Triger bst -purchase.md",
     "SQL/nghiệp vụ về giảm giá và voucher giảm giá.md",
     "tuHocJava/rule_4 don't nest resources.md",
-    "tuHocJava/rule_3 avoid using verb in uri.md",
     "Front-end",
     "Bootstrap",
     "Pasted image 20250326025102.png",
@@ -301,7 +302,6 @@
     "Unconfirmed 725421.crdownload",
     "english/Unconfirmed 112589.crdownload",
     "khoiSuDoanhNghiep",
-    "english/Unconfirmed 868210.crdownload",
     "Chưa đặt tên.canvas"
   ]
 }
