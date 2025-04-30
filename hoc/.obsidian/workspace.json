@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config note/config note.md",
+                "file": "github/clone by ssh.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "config note"
+              "title": "clone by ssh"
             }
           },
           {
@@ -156,7 +156,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Trình duyệt tệp"
+              "title": "Files"
             }
           }
         ],
@@ -245,19 +245,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Mở bộ chuyển đổi nhanh": false,
-      "graph:Mở xem biểu đồ": false,
-      "canvas:Tạo bảng mới": false,
-      "templates:Chèn mẫu": false,
-      "command-palette:Mở khay lệnh": false,
-      "workspaces:Quản lý cấu trúc khung làm việc": false,
-      "notes-sync-share:Notes Sync": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
   "active": "ef9b124b945422f3",
   "lastOpenFiles": [
-    "tuHocJava/Lỗi khi serialize + Lazy.md",
     "config note/config note.md",
+    "tuHocJava/Lỗi khi serialize + Lazy.md",
     "config note",
     "work/Note pdp.md",
     "SQL/Booksattion.md",

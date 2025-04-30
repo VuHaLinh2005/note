@@ -1,43 +1,86 @@
-Lỗi này xuất hiện vì GitHub đã ngừng hỗ trợ xác thực bằng mật khẩu qua HTTPS.  Bạn cần sử dụng một phương thức xác thực khác để clone repository. Dưới đây là hai giải pháp phổ biến:
-git remote add origin https://github.com/VuHaLinh2005/java-spring-mvc-by-hoidanit.git
-git remote set-url origin https://github.com/VuHaLinh2005/java-spring-mvc-by-hoidanit.git (use khi forder là do clone từ git của ng khác ,và h là push lên git mik)
-1. **Tạo SSH key (nếu bạn chưa có):**  Mở terminal và gõ lệnh `ssh-keygen -t ed25519 -C "your_email@example.com"`. Thay `your_email@example.com` bằng email bạn dùng cho GitHub.  Nếu bạn không có `ed25519`, dùng `rsa` cũng được: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`.  Ấn Enter cho các câu hỏi mặc định (hoặc chọn đường dẫn và passphrase nếu muốn).
+ 
 
-2. **Sao chép SSH key:**  Mở file `~/.ssh/id_ed25519.pub` (hoặc `~/.ssh/id_rsa.pub` nếu bạn dùng rsa) bằng trình soạn thảo văn bản và sao chép toàn bộ nội dung.
+### 1. **Kiểm tra SSH Key trên máy**
 
-3. **Thêm SSH key vào GitHub:**
-    * Đăng nhập vào GitHub.
-    * Click vào ảnh đại diện ở góc trên bên phải, chọn "Settings".
-    * Ở menu bên trái, chọn "SSH and GPG keys".
-    * Click nút "New SSH key".
-    * Ở mục "Title", đặt tên cho key (ví dụ: "My Laptop").
-    * Dán key bạn đã sao chép vào mục "Key".
-    * Click "Add SSH key".
-
-* **Clone bằng SSH:** Sử dụng URL SSH để clone repository:
+Chạy lệnh sau để kiểm tra xem bạn đã tạo SSH key hay chưa:
 
 ```bash
-git clone git@github.com:Linh-kingdom/linhGitHub.git
+ls ~/.ssh
 ```
 
-**2. Sử dụng Personal Access Token (PAT):**
-
-Đây là cách thay thế nếu bạn không muốn sử dụng SSH.
-
-* **Tạo PAT:**  Tạo một PAT trong cài đặt tài khoản GitHub của bạn (Settings -> Developer settings -> Personal access tokens -> Generate new token).  Đảm bảo cấp quyền "repo" cho token.
-* **Clone bằng HTTPS và PAT:**  Sử dụng URL HTTPS và nhập PAT khi được yêu cầu:
+Nếu thấy các file như `id_rsa` và `id_rsa.pub`, nghĩa là SSH key đã tồn tại. Nếu không, bạn cần tạo SSH key mới:
 
 ```bash
-git clone https://<your_github_username>:<your_pat>@github.com/Linh-kingdom/linhGitHub.git
+ssh-keygen -t rsa -b 4096 -C "linhvhph48570@gmail.com"
 ```
 
+- Nhấn **Enter** để lưu key ở vị trí mặc định (`~/.ssh/id_rsa`).
+    
+- Bạn có thể để trống **passphrase** (hoặc nhập nếu muốn bảo mật hơn).
+    
 
-**Lưu ý:**
+---
 
-*  Không nên commit PAT vào repository.  Nếu bạn đã lỡ commit PAT, hãy revoke (hủy) nó ngay lập tức trong cài đặt GitHub.
-*  Cách sử dụng SSH an toàn và tiện lợi hơn, bạn không cần phải nhập mật khẩu hoặc PAT mỗi lần clone hoặc push code.
+### 2. **Thêm SSH Key vào SSH Agent**
 
+Sau khi tạo SSH key, chạy lệnh sau để đảm bảo SSH agent đang chạy và thêm key vào:
 
-Sau khi thực hiện một trong hai cách trên, bạn sẽ có thể clone repository thành công.
+```bash
+eval "$(ssh-agent -s)"  # Khởi động SSH Agent
+ssh-add ~/.ssh/id_rsa   # Thêm SSH key
+```
 
+---
 
+### 3. **Thêm SSH Key vào GitHub**
+
+1. Lấy nội dung của file `id_rsa.pub` (SSH public key):
+    
+    ```bash
+    cat ~/.ssh/id_rsa.pub
+    ```
+    
+2. Sao chép toàn bộ nội dung hiện ra.
+    
+3. Truy cập GitHub:
+    
+    - Đăng nhập vào tài khoản GitHub của bạn.
+        
+    - Vào **Settings** > **SSH and GPG Keys** > **New SSH Key**.
+        
+    - Dán nội dung bạn vừa sao chép vào và đặt tên (ví dụ: "Laptop Linh").
+        
+    - Nhấn **Add SSH Key**.
+        
+
+---
+
+### 4. **Kiểm tra kết nối với GitHub**
+
+Kiểm tra xem SSH đã hoạt động đúng chưa bằng lệnh:
+
+```bash
+ssh -T git@github.com
+```
+
+Nếu thành công, bạn sẽ thấy thông báo:
+
+```
+Hi VuHaLinh2005! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+---
+
+### 5. **Clone lại repository**
+
+Sau khi hoàn thành các bước trên, thử lại lệnh:
+
+```bash
+git clone git@github.com:VuHaLinh2005/note.git
+```
+
+Nếu vẫn gặp lỗi, kiểm tra:
+
+- Repository có tồn tại không.
+    
+- Tài khoản GitHub của bạn có quyền truy cập không (ví dụ: private repository cần quyền cụ thể).
