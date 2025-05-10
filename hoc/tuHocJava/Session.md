@@ -1,24 +1,21 @@
 ### bản chất : 
   mỗi **request** về cơ bản là **độc lập** và **không "nhớ**" gì về các request trước đó. Session giúp "~={red}nhớ=~" ~={red}thông tin=~ người dùng trong suốt ~={red}phiên=~ ~={red}làm việc=~ .
-   **Session là cách để các lập trình viên lưu lại những giữ liệu của người dùng khi người dùng khi sử dụng website.**
+ 
+Đơn giản nhất:
 
-## chi tiết 
-Đúng vậy, mã session (session ID) được lưu trữ trong cookie và được sử dụng để **server** xác định và truy xuất đúng **session** **data** tương ứng với người dùng. Hãy tưởng tượng như sau:
+- **Session** là **~={red}cách=~** để trang web **"nhớ" bạn là ai** và những thông tin liên quan đến bạn (như bạn đã đăng nhập chưa, bạn đã thêm món hàng nào vào giỏ,...) trong suốt chuyến thăm website của bạn.
+ 
+1. Khi bạn vào website lần đầu, máy chủ tạo ra một **"vùng nhớ" dành riêng cho bạn** trên máy chủ của nó. Đó là nơi lưu **dữ liệu Session** của bạn.
+2. Máy chủ tạo ra một mã số đặc biệt gọi là **Session ID**, giống như một **"chìa khóa"** để tìm đúng "vùng nhớ" của bạn.
+3. Máy chủ gửi cái **Session ID** này cho trình duyệt của bạn và bảo trình duyệt **lưu lại nó trong một cái Cookie**.
+4. Mỗi lần bạn gửi yêu cầu đến máy chủ (ví dụ: bấm vào xem sản phẩm khác), trình duyệt sẽ **tự động gửi kèm cái Cookie chứa Session ID** đó cho máy chủ.
+5. Máy chủ nhận được Session ID, dùng nó như "chìa khóa" để **tìm đúng "vùng nhớ" (Session data) của bạn** trên máy chủ, và thế là nó biết bạn là ai và những gì bạn đã làm trước đó.
 
-1. **Server tạo session:** Khi người dùng truy cập website, server tạo một session cho người dùng đó.  **Session** này là một **vùng** **lưu** trữ dữ liệu trên **server**, **dành** **riêng** cho **user**  .
+Tóm lại cốt lõi:
 
-2. **Server tạo session ID:**  Server tạo một mã session (session ID) duy nhất để xác định session vừa tạo.
+- **Bạn cần Session** để website **"nhớ" thông tin của bạn** qua nhiều lần bấm chuột (các yêu cầu).
+- **Dữ liệu thực sự** mà website "nhớ" về bạn được **lưu trên máy chủ**.
+- **Session ID** là cái **mã** giúp máy chủ **xác định đúng dữ liệu của bạn**.
+- **Cookie** là cái **công cụ** giúp trình duyệt **lưu trữ và gửi cái Session ID** này cho máy chủ.
 
-3. **Server gửi session ID cho client (thông qua cookie):** Server tạo một cookie chứa session ID và gửi nó đến trình duyệt của người dùng.  **Trình** **duyệt** sẽ **lưu** trữ **cookie** này.
-
-4. **Client gửi session ID trong mỗi request:** Mỗi khi trình duyệt gửi request đến server, nó sẽ tự động gửi kèm cookie chứa session ID.
-
-5. **Server sử dụng session ID để lấy session data:**  Server nhận được request và đọc session ID từ cookie.  Server sử dụng session ID này để tìm và lấy session data tương ứng được lưu trữ trên server.
-
-**Tóm lại:**
-
-* Mã session (**session ID**)   như một "chìa **khóa**" để **server** **tìm** đúng "**ổ** khóa" .
-* **Cookie** được sử dụng để **lưu** trữ và truyền **session ID** giữa client và server.
-* **Dữ liệu** thực sự của **session** được lưu trữ trên **server**.
-* nếu **cookie mất** : thì **session id mất** (chìa khoá mở session data mất.)
-
+ 

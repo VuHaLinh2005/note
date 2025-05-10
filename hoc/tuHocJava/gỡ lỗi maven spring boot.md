@@ -1,1 +1,1 @@
-1. **Sử dụng Maven wrapper (.mvnw):** Đây là cách khuyến nghị nhất. Nếu dự án của bạn có thư mục .mvn, hãy dùng lệnh ./mvnw clean install (trên Linux/macOS) hoặc .\mvnw clean install (trên Windows) để build project. Maven wrapper sẽ tự động tải xuống và sử dụng phiên bản Maven chính xác cho dự án, tránh các xung đột phiên bản và cấu hình.
+  ./mvnw clean install (trên Linux/macOS) hoặc .\mvnw clean install (trên Windows)  

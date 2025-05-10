@@ -28,14 +28,7 @@ public class BuildingServiceImpl implements BuildingService {
     // ...
 }
 ```
-
-Quá trình inject sẽ diễn ra như sau:
-
-1. Spring (DI container) thấy `BuildingApi` cần `BuildingService`.
-2. Spring tìm kiếm bean(**impl**) implement `BuildingService` (tìm thấy `BuildingServiceImpl`).
-3. Spring tạo một instance của `BuildingServiceImpl` (tương đương `new BuildingServiceImpl()`).
-4. Spring gọi constructor của `BuildingApi` và truyền instance của `BuildingServiceImpl` vừa tạo vào như một argument.
-5. `BuildingApi` giờ đã có một instance của `BuildingServiceImpl` được **inject** vào **field** `buildingService`.
+ 
 
 
 

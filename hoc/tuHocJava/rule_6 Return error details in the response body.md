@@ -1,3 +1,0 @@
-
-
-Quy tắc "Return error details in the response body" nghĩa là khi API của bạn gặp lỗi, thay vì chỉ trả về một mã trạng thái HTTP (như 400 Bad Request, 500 Internal Server Error), bạn cũng nên cung cấp thông tin chi tiết về lỗi trong phần thân (body) của phản hồi HTTP. Điều này giúp cho client (ví dụ: ứng dụng web, ứng dụng di động) hiểu rõ hơn nguyên nhân gây ra lỗi và có thể xử lý lỗi một cách hiệu quả hơn.

@@ -4,109 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d402cc0a0e9d236b",
+        "id": "cb68378f20f9c522",
         "type": "tabs",
         "children": [
           {
-            "id": "072a05b69b99bef8",
+            "id": "95b8ea25d4b4c531",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL/Booksattion.md",
+                "file": "tuHocJava/Valid anotation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Booksattion"
-            }
-          },
-          {
-            "id": "ef9b124b945422f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL/nghiệp vụ về giảm giá và voucher giảm giá.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "nghiệp vụ về giảm giá và voucher giảm giá"
-            }
-          },
-          {
-            "id": "ac9e7e0f01dc3566",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bootstrap/Căn dọc vs thẻ h.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Căn dọc vs thẻ h"
-            }
-          },
-          {
-            "id": "77759f57137b094b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Bootstrap/Cuộn sản phẩm.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cuộn sản phẩm"
-            }
-          },
-          {
-            "id": "2114a1346bfd37ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Front-end/Biến Css.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Biến Css"
-            }
-          },
-          {
-            "id": "78756bd7fefd2770",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tuHocJava/Quy tắc code Rest api.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Quy tắc code Rest api"
-            }
-          },
-          {
-            "id": "3c96c2d121aae6b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "tuHocJava/Serialization.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Serialization"
+              "title": "Valid anotation"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -164,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 222.5
+    "width": 200
   },
   "right": {
     "id": "2958f0aee49c0ed4",
@@ -214,7 +129,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -226,17 +143,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "english/Bài tập về mệnh đề quan hệ P1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Đề cương của Bài tập về mệnh đề quan hệ P1"
+              "title": "Outline"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -253,49 +169,49 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ef9b124b945422f3",
+  "active": "95b8ea25d4b4c531",
   "lastOpenFiles": [
-    "vuejs/12-11.md",
-    "SQL/nghiệp vụ về giảm giá và voucher giảm giá.md",
-    "SQL/Lỗi CASCADE.md",
-    "SQL/Khi nào tạo bảng sql.md",
-    "SQL/join bang.md",
-    "js/splice and filter.md",
-    "SQL/Booksattion.md",
-    "js/Object literal in js.md",
-    "js/hoisted.md",
-    "intilij/hot key.md",
-    "github/git push.md",
-    "github/clone by ssh.md",
-    "github/branch git.md",
-    "Front-end/Biến Css.md",
-    "Front-end/Văn bản thành 2 dòng và chấm chấm.md",
-    "Front-end/Tại sao phải dùng pina.md",
-    "config note/config note.md",
-    "Bootstrap/Không xuống dòng  và tự căn.md",
-    "cmd/delete app for cmd.md",
-    "Bootstrap/justify content between với chiều dọc.md",
-    "Bootstrap/Cuộn sản phẩm.md",
-    "Bootstrap/Căn dọc vs thẻ h.md",
-    "Bootstrap/3 chấm khi tên sản phẩm dài.md",
-    "tuHocJava/Lỗi khi serialize + Lazy.md",
-    "config note",
-    "work/Note pdp.md",
+    "tuHocJava/web service.md",
+    "tuHocJava/wildCard in collection.md",
+    "tuHocJava/Valid anotation.md",
+    "tuHocJava/tightly coupled and loosely coupled.md",
+    "tuHocJava/Truy cập tài nguyên tĩnh config.md",
+    "tuHocJava/Template engine.md",
+    "tuHocJava/throw and throws.md",
+    "tuHocJava/Status code.md",
+    "tuHocJava/Static method and method thường.md",
+    "Untitled mindmap.md",
+    "tuHocJava/Spring sercurity.md",
+    "tuHocJava/restController anotation.md",
     "tuHocJava/Serialization.md",
-    "Pasted image 20250409153857.png",
+    "tuHocJava/Session.md",
+    "tuHocJava/rule_5  use plural resource nouns.md",
+    "tuHocJava/rule_4 don't nest resources.md",
+    "tuHocJava/rule_2 don't return plaint text.md",
+    "tuHocJava/rule_1_get_post_put_delete.md",
+    "tuHocJava/rule_8 Use status codes consistently.md",
+    "tuHocJava/rule_6 Return error details in the response body.md",
+    "tuHocJava/rule_7 Pay attention to status codes.md",
+    "tuHocJava/rule_3 avoid using verb in uri.md",
+    "tuHocJava/Response.md",
+    "tuHocJava/Quy tắc code Rest api.md",
+    "tuHocJava/Query string.md",
+    "tuHocJava/Podman là gì.md",
+    "luuY_dongTuKhongChiaTiepDien.png",
+    "BangDaiTu_tinhTuSoHuu.png",
+    "eg_ObjectPronoun.png",
+    "ex_V.png",
+    "HTHTTD.png",
+    "kiHieuSof.jpg",
+    "nghiVan_htd_qkd.png",
+    "nghivan_httd_qktd.png",
+    "nghiVan_nhomHThanh_ht_qk.png",
+    "nghiVan_nhomTuongLai.png",
+    "config note",
     "SQL/BookStation",
     "Front-end",
     "Bootstrap",
-    "Pasted image 20250326025102.png",
     "work",
-    "BangDaiTu_tinhTuSoHuu.png",
-    "kiHieuSof.jpg",
-    "luuY_dongTuKhongChiaTiepDien.png",
-    "nghiVan_htd_qkd.png",
-    "nghiVan_nhomHThanh_ht_qk.png",
-    "nghiVan_nhomTuongLai.png",
-    "nhomHT_ht_qk.png",
-    "nhomThiHoanThanh_phuDinh.png",
     "Unconfirmed 987545.crdownload",
     "Unconfirmed 723593.crdownload",
     "Unconfirmed 725421.crdownload",

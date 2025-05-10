@@ -1,25 +1,9 @@
-#serializable
-
-
-### 📘 **Serializable Là Gì Trong Java?**
-
-- 🏷️ **Serializable là gì?** `Serializable` là một **interface** trong Java, cho phép một đối tượng Java có thể được **tuần tự hóa (serialize)**, tức là chuyển đổi đối tượng thành một chuỗi byte. Chuỗi byte này có thể được lưu trữ trên đĩa (trong tệp) hoặc truyền qua mạng. Khi cần sử dụng lại, chuỗi byte này có thể được **giải tuần tự hóa (deserialize)** để tái tạo lại đối tượng ban đầu.
-    
-- 🔗 **Tuần Tự Hóa (Serialization) trong Java Bean** Việc cho phép Java Bean triển khai `Serializable` giúp nó dễ dàng được lưu trữ hoặc truyền đi ở dạng byte. Điều này hữu ích trong các tình huống:
-    
-    - **Lưu trữ đối tượng vào file**: Giúp bạn lưu đối tượng vào file để sử dụng lại sau này.
-    - **Truyền đối tượng qua mạng**: Khi một ứng dụng Java cần gửi dữ liệu qua mạng, dữ liệu được tuần tự hóa và giải tuần tự hóa ở bên nhận để đảm bảo tính toàn vẹn.
-
-**Serialization** là quá trình chuyển đổi một **đối tượng** trong bộ nhớ (ví dụ: một đối tượng Java) thành một **chuỗi byte** để có thể lưu trữ hoặc truyền đi (ví dụ: gửi qua mạng). **Deserialization** là quá trình ngược lại, chuyển đổi chuỗi byte trở lại thành đối tượng trong bộ nhớ.
-
-Khi làm việc với API, serialization và deserialization thường được sử dụng để chuyển đổi dữ liệu giữa backend (ví dụ: Java) và frontend (ví dụ: JavaScript). Dữ liệu thường được serialize thành JSON hoặc XML.
-
-**Vấn đề khi serialize/deserialize trực tiếp Entity:**
-
-- **Entity thường phức tạp:** Entity có thể chứa nhiều trường dữ liệu, quan hệ với các entity khác, và các logic nghiệp vụ. Việc serialize/deserialize trực tiếp entity có thể dẫn đến các vấn đề như:
-    
-    - **Vòng lặp vô hạn:** Nếu entity có quan hệ vòng (ví dụ, A liên kết đến B, B liên kết đến C, và C lại liên kết đến A), quá trình serialization có thể rơi vào **vòng lặp vô hạn**.
-
-
-bytecode ra lệnh cho - > jvm  -> bit
-
+ 
+- **Serializable Là Gì?** Nó là một **dấu hiệu** (interface) trong Java. Khi một đối tượng "đeo" dấu hiệu này, nó cho phép đối tượng đó có thể được **chuyển đổi thành chuỗi byte**.
+- **Serialization (Tuần Tự Hóa):** Là quá trình **chuyển một đối tượng từ trong bộ nhớ thành chuỗi byte**.
+- **Deserialization (Giải Tuần Tự Hóa):** Là quá trình **chuyển chuỗi byte đó trở lại thành đối tượng** trong bộ nhớ.
+- **Dùng Để Làm Gì (Ứng Dụng Thực Tế):**
+    - **Lưu đối tượng vào file:** Giúp bạn lưu trạng thái của đối tượng để dùng sau này.
+    - **Gửi đối tượng qua mạng:** Khi bạn cần gửi dữ liệu (là một đối tượng) từ ứng dụng này sang ứng dụng khác qua mạng.
+    - **Truyền dữ liệu trong API:** Thường dùng để chuyển dữ liệu giữa backend (ví dụ: Java) và frontend (ví dụ: JavaScript), thường dưới dạng JSON hoặc XML sau khi đã serialize.
+- **Lưu Ý Quan Trọng (Vấn Đề Tiềm Ẩn):** Việc serialize trực tiếp các đối tượng phức tạp (như các entity trong database) có thể gặp vấn đề. Một vấn đề hay gặp là **vòng lặp vô hạn** nếu các đối tượng có mối quan hệ tham chiếu lẫn nhau tạo thành vòng.
